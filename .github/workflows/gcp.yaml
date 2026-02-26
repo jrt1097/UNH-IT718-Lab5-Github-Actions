@@ -22,3 +22,7 @@ jobs:
       - name: Deploy to Cloud Storage
         run: |
           gsutil -m rsync -r -d ./ gs://it718-lab5-jt
+
+      - name: Set no-cache headers
+        run: |
+          gsutil setmeta -h "Cache-Control:no-store, max-age=0, must-revalidate" gs://it718-lab5-jt/index.html

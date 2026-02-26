@@ -21,4 +21,4 @@ jobs:
 
       - name: Deploy to Cloud Storage
         run: |
-          gsutil -m rsync -r -d -x "^\.(git|github)/|^key\.json$|^README\.md$" ./ gs://it718-lab5-jt/
+          gsutil -m cp -r index.html gs://it718-lab5-jt/

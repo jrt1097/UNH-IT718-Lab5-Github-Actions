@@ -21,4 +21,4 @@ jobs:
 
       - name: Deploy to Cloud Storage
         run: |
-          gsutil -m rsync -r -d ./site gs://it718-lab5-jt
+          gsutil -m rsync -r -d ./site gs://it718-lab5-jt/

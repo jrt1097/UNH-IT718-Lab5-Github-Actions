@@ -39,4 +39,5 @@ jobs:
             --account-key $AZURE_STORAGE_KEY \
             --destination \$web \
             --source . \
-            --pattern "*"
+            --pattern "*" \
+            --overwrite true
